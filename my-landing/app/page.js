@@ -30,52 +30,57 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-purple-800 to-purple-600 text-white">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#9B59B6] to-[#8E44AD] text-white">
       <Header />
       <main className="container mx-auto flex-1 p-4">
+        <img 
+          src="/undraw_undraw_undraw_undraw_undraw_website_o7n3_bucy_30uo_-1-_d6br_0qfo.svg" 
+          alt="Illustration" 
+          className="max-w-full mx-auto mb-4" 
+        />
         <div className="max-w-lg mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">Create Your Landing Page</h1>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-white">Title</label>
+              <label className="block">Title</label>
               <input
                 type="text"
                 name="title"
                 value={formData.title}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border border-white rounded-md focus:outline-none focus:border-purple-300 bg-[#8E44AD] text-white"
               />
             </div>
             <div>
-              <label className="block text-white">Description</label>
+              <label className="block">Description</label>
               <textarea
                 name="description"
                 value={formData.description}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border border-white rounded-md focus:outline-none focus:border-purple-300 bg-[#8E44AD] text-white"
               />
             </div>
             <div>
-              <label className="block text-white">Background Color</label>
+              <label className="block">Background Color</label>
               <input
                 type="color"
                 name="backgroundColor"
                 value={formData.backgroundColor}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none"
+                className="w-full px-4 py-2 border border-white rounded-md focus:outline-none bg-[#8E44AD]"
               />
             </div>
             <div>
-              <label className="block text-white">Text Color</label>
+              <label className="block">Text Color</label>
               <input
                 type="color"
                 name="textColor"
                 value={formData.textColor}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none"
+                className="w-full px-4 py-2 border border-white rounded-md focus:outline-none bg-[#8E44AD]"
               />
             </div>
-            <button type="submit" className="bg-blue-500 text-white px-6 py-3 rounded-md">
+            <button type="submit" className="bg-[#9B59B6] hover:bg-[#8E44AD] text-white px-6 py-3 rounded-md">
               Generate
             </button>
           </form>
